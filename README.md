@@ -81,7 +81,7 @@ No other installation required — SQLite is embedded via `better-sqlite3`.
 ### 1 — Clone and enter the project
 
 ```bash
-git clone <repo-url>
+git clone https://github.com/VenusTokyo/TaskFlow.git
 cd taskflow
 ```
 
