@@ -6,7 +6,10 @@ const cors = require('cors')
 
 const app = express()
 
-app.use(cors({ origin: 'http://localhost:5173' }))
+app.use(cors({
+    origin: process.env.CLIENT_URL,
+    credentials: true
+}));
 app.use(express.json())
 
 app.use('/api/auth', require('./routes/auth'))
@@ -15,7 +18,7 @@ app.use('/api/projects', require('./routes/projects'))
 app.use('/api/tasks', require('./routes/tasks'))
 
 app.get('/health', (req, res) => {
-  res.status(200).json({ status: 'ok' });
+    res.status(200).json({ status: 'ok' });
 });
 
 const PORT = process.env.PORT || 5000
