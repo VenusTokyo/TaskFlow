@@ -3,6 +3,9 @@
 A full-stack project and task management web app. Create projects, track tasks on a drag-and-drop Kanban board, and view your productivity at a glance.
 
 ---
+<img width="1898" height="750" alt="image" src="https://github.com/user-attachments/assets/e8e9a71c-c1e7-4f38-b47a-f47662e51185" />
+<img width="1918" height="912" alt="image" src="https://github.com/user-attachments/assets/5d8e7615-6101-4397-a438-1d75a4b72f84" />
+<img width="1918" height="907" alt="image" src="https://github.com/user-attachments/assets/bdc7c3a4-1439-4481-9583-561032ac8f01" />
 
 ## Tech Stack
 
