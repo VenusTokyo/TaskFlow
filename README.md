@@ -36,6 +36,7 @@ taskflow/
 │       │   ├── ProjectDetail.jsx  Kanban board
 │       │   └── Profile.jsx    Edit name / bio
 │       ├── components/
+│       │   ├── AppLayout.jsx    Responsive shell (sidebar + mobile topbar)
 │       │   ├── Sidebar.jsx
 │       │   ├── KanbanBoard.jsx  Drag-and-drop (dnd-kit)
 │       │   ├── TaskCard.jsx
@@ -97,6 +98,7 @@ Create `server/.env` (already present if you cloned this repo; otherwise create 
 ```env
 PORT=5000
 JWT_SECRET=change_this_to_a_long_random_string
+CLIENT_URL=http://localhost:5173
 ```
 
 Start the server:
@@ -130,6 +132,7 @@ Open your browser to **http://localhost:5173** and register a new account.
 |---|---|---|
 | `PORT` | `5000` | Express server port |
 | `JWT_SECRET` | *(required)* | Secret used to sign JWT tokens — use a long random string in production |
+| `CLIENT_URL` | `http://localhost:5173` | Allowed CORS origin — set to your frontend URL (update when deploying) |
 
 The frontend API base URL is hard-coded to `http://localhost:5000/api` in `client/src/lib/api.js`. Change it there if you move the server to a different host or port.
 
